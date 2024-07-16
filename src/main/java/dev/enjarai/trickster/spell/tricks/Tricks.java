@@ -164,6 +164,7 @@ public class Tricks {
     public static final DestabilizeBlockTrick DESTABILIZE_BLOCK = register("destabilize_block", new DestabilizeBlockTrick());
     public static final DisguiseBlockTrick DISGUISE_BLOCK = register("disguise_block", new DisguiseBlockTrick());
     public static final DispelBlockDisguiseTrick DISPEL_BLOCK_DISGUISE = register("dispel_block_disguise", new DispelBlockDisguiseTrick());
+    public static final IgniteTrick IGNITE = register("ignite", new IgniteTrick());
 
     // Inventory
     public static final ImportTrick IMPORT = register("import", new ImportTrick());

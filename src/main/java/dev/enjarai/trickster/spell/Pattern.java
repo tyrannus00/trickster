@@ -9,6 +9,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
 
+/**
+ * The pattern indexes
+ *     1
+ *   0   2
+ * 3   4   5
+ *   6   7
+ *     8
+ */
 public record Pattern(List<PatternEntry> entries) {
     public static final Codec<Pattern> CODEC = PatternEntry.CODEC
             .listOf(0, Integer.MAX_VALUE).xmap(Pattern::new, Pattern::entries);
